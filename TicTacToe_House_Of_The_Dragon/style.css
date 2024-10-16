@@ -1,0 +1,49 @@
+body {
+    width: 100%; /* 100% of screen width */
+    height: 100vh; /* 100% of screen height */
+    background-color: black; /* according to theme of HouseOfTheDragon..might change later */
+    text-align: center; 
+    display: flex; /* flex model to align itens */
+    align-items: center; /* vertical align itens center */
+    justify-content: center; /* horizontal align itens center */
+    flex-direction: column; /* organize all itens in column */
+    gap: 16px; /* space between itens */
+    color: antiquewhite;
+    background: url(./images/background.jpg); 
+    background-size: cover; /* all screen */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#board {
+    display: grid; /* grid for game */
+    grid-template-columns: repeat(3, 100px); /* defines 3 columns */
+    grid-gap: 10px; /* space between cells */
+    padding: 32px; /* space inside cell */
+    background: wheat;
+    border-radius: 10px; /* round borders */
+}
+
+.cell {
+    width: 100%; /* each cell width*/
+    height: 100px; /* each cell height */
+    background-color: bisque;
+    font-size: 2rem; /* size for symbol font */
+    display: flex; /* activates flex to center */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 6px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid grey;
+}
+
+.reds {
+    background-image: url('./images/reds.png');
+    border-color: red;
+}
+
+.greens {
+    background-image: url('./images/greens.png');
+    border-color: green;
+}
